@@ -55,9 +55,9 @@ export default function Navbar({ onSearchOpen }) {
       {/* Top bar */}
       <div className="hidden lg:flex bg-aqua-700 text-white text-xs py-2 px-8 justify-between items-center">
         <div className="flex items-center gap-6">
-          <span className="flex items-center gap-1.5"><Phone size={12} /> +1 (800) 555-SPA1</span>
+          <span className="flex items-center gap-1.5"><Phone size={12} /> +91 98765 43210</span>
           <span>Mon–Sun: 9:00 AM – 9:00 PM</span>
-          <span>245 Aqua Wellness Avenue, Noida</span>
+          <span>Shop No-27, 14th Ave, Gaur City 2, Greater Noida</span>
         </div>
         <div className="flex items-center gap-4">
           <a href="mailto:hello@aquaspa.com" className="hover:text-gold-400 transition-colors">hello@aquaspa.com</a>
@@ -90,7 +90,7 @@ export default function Navbar({ onSearchOpen }) {
                 <div className="font-playfair font-bold text-xl leading-tight" style={{ background: 'linear-gradient(135deg, #00B4D8, #023E8A)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                   Aqua Spa
                 </div>
-                <div className="text-xs text-gray-400 font-poppins tracking-widest uppercase leading-none">Noida</div>
+                <div className="text-xs text-gray-400 font-poppins tracking-widest uppercase leading-none">Gaur City 2</div>
               </div>
             </Link>
 
@@ -181,7 +181,7 @@ export default function Navbar({ onSearchOpen }) {
             <div className="absolute right-0 top-0 h-full w-80 bg-white dark:bg-gray-900 shadow-2xl overflow-y-auto">
               <div className="p-6 border-b border-gray-100 dark:border-gray-800">
                 <div className="font-playfair font-bold text-2xl gradient-text">Aqua Spa</div>
-                <div className="text-xs text-gray-400 tracking-widest uppercase">Noida</div>
+                <div className="text-xs text-gray-400 tracking-widest uppercase">Gaur City 2</div>
               </div>
               <nav className="p-4">
                 {navLinks.map(link => (

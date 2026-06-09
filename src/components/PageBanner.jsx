@@ -22,7 +22,7 @@ export default function PageBanner({ title, subtitle, image, breadcrumbs = [] })
       <div className="relative z-10 text-center px-4">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="text-aqua-300 text-sm font-semibold uppercase tracking-[0.2em] mb-3">
-            {subtitle || 'Aqua Spa Noida'}
+            {subtitle || 'Aqua Spa Gaur City 2'}
           </div>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-5">{title}</h1>
 

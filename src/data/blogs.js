@@ -85,7 +85,7 @@ export const blogs = [
     date: 'January 14, 2024',
     readTime: '7 min read',
     image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80',
-    excerpt: 'Discover how shared spa experiences can deepen connection, improve communication, and create lasting romantic memories. Plus: our exclusive guide to planning the ultimate couples spa day in Noida.',
+    excerpt: 'Discover how shared spa experiences can deepen connection, improve communication, and create lasting romantic memories. Plus: our exclusive guide to planning the ultimate couples spa day in Gaur City 2.',
     tags: ['Couples', 'Romance', 'Spa Day', 'Relationships'],
     featured: true,
   },

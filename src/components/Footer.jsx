@@ -98,21 +98,21 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-playfair font-bold text-2xl" style={{ background: 'linear-gradient(135deg, #00B4D8, #48CAE4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Aqua Spa</div>
-                <div className="text-xs text-gray-400 tracking-widest uppercase">Noida</div>
+                <div className="text-xs text-gray-400 tracking-widest uppercase">Gaur City 2</div>
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
-              Premium luxury spa, wellness & beauty treatments designed for mind, body & soul. Experience ultimate relaxation in Noida's finest wellness sanctuary.
+              Premium luxury spa, wellness & beauty treatments designed for mind, body & soul. Experience ultimate relaxation in Gaur City 2's finest wellness sanctuary.
             </p>
             {/* Contact */}
             <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
-                <MapPin size={16} className="text-aqua-400 flex-shrink-0" />
-                <span>245 Aqua Wellness Avenue, Sector 18, Noida</span>
+              <div className="flex items-start gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
+                <MapPin size={16} className="text-aqua-400 flex-shrink-0 mt-0.5" />
+                <span>Shop No-27, 1st floor, 14th Ave, Gaur City 2, Greater Noida, Ghaziabad, Uttar Pradesh 201009</span>
               </div>
-              <a href="tel:+18005557721" className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
+              <a href="tel:+919876543210" className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
                 <Phone size={16} className="text-aqua-400 flex-shrink-0" />
-                <span>+1 (800) 555-SPA1</span>
+                <span>+91 98765 43210 / +91 120 456 7890</span>
               </a>
               <a href="mailto:hello@aquaspa.com" className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
                 <Mail size={16} className="text-aqua-400 flex-shrink-0" />
@@ -161,9 +161,9 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <div>© 2024 Aqua Spa Noida. All rights reserved.</div>
+          <div>© 2024 Aqua Spa Gaur City 2. All rights reserved.</div>
           <div className="flex items-center gap-1">
-            Made with <Heart size={14} className="text-red-400 mx-1" /> in Noida
+            Made with <Heart size={14} className="text-red-400 mx-1" /> in Greater Noida
           </div>
           <div className="flex gap-6">
             <Link to="/privacy" className="hover:text-aqua-400 transition-colors">Privacy Policy</Link>

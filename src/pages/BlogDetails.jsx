@@ -106,7 +106,7 @@ export default function BlogDetails() {
 
               {/* Main content body paragraphs */}
               <p className="text-base">
-                Maintaining wellness in the fast-paced, high-stress environment of modern cities like Noida presents unique challenges. While we often focus on clean eating and gym memberships, true rejuvenation involves addressing physical, mental, and biochemical states simultaneously. This guide highlights standard science-backed habits that can restore systemic balance.
+                Maintaining wellness in the fast-paced, high-stress environment of modern cities like Greater Noida presents unique challenges. While we often focus on clean eating and gym memberships, true rejuvenation involves addressing physical, mental, and biochemical states simultaneously. This guide highlights standard science-backed habits that can restore systemic balance.
               </p>
               
               <h3 className="font-playfair text-2xl font-bold text-gray-900 dark:text-white mt-8">The Physiology of Stress and Relief</h3>

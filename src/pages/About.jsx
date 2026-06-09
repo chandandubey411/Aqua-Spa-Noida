@@ -28,7 +28,7 @@ const values = [
   {
     icon: <Award size={28} className="text-aqua-400" />,
     title: 'Award Winning Excellence',
-    desc: 'Recognized consecutively as Noida\'s premier luxury wellness destination for outstanding service standards.'
+    desc: 'Recognized consecutively as Greater Noida\'s premier luxury wellness destination for outstanding service standards.'
   }
 ];
 
@@ -77,7 +77,7 @@ export default function About() {
               <div className="luxury-divider" style={{ justifyContent: 'flex-start' }} />
               
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
-                Founded with a vision to create a peaceful escape in the heart of Noida, Aqua Spa has grown into a premier destination for luxury relaxation and holistic wellness. Our sanctuary offers an escape from the chaotic demands of modern urban life.
+                Founded with a vision to create a peaceful escape in the heart of Gaur City 2, Aqua Spa has grown into a premier destination for luxury relaxation and holistic wellness. Our sanctuary offers an escape from the chaotic demands of modern urban life.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
                 We believe that health is not simply the absence of sickness, but a vibrant state of balance between physical relaxation, mental peace, and spiritual ease. Our therapies are designed to activate the body\'s natural self-healing mechanisms, leaving you fully refreshed.

@@ -61,7 +61,7 @@ export default function Contact() {
                   <div>
                     <h5 className="font-playfair text-base font-bold text-gray-900 dark:text-white">Address</h5>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-poppins leading-relaxed">
-                      Sector 18, Block C, Noida, Uttar Pradesh, 201301
+                      Shop No-27, 1st floor, 14th Ave, Gaur City 2, Greater Noida, Ghaziabad, Uttar Pradesh 201009
                     </p>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ export default function Contact() {
                   <div>
                     <h5 className="font-playfair text-base font-bold text-gray-900 dark:text-white">Email Inquiries</h5>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-poppins">
-                      bookings@aquaspanoida.com<br />
-                      support@aquaspanoida.com
+                      bookings@aquaspa.com<br />
+                      support@aquaspa.com
                     </p>
                   </div>
                 </div>
@@ -220,19 +220,19 @@ export default function Contact() {
           {/* Elegant mock maps image frame */}
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-gray-200 dark:bg-gray-800 text-gray-400 dark:text-gray-500 font-playfair select-none p-6 text-center">
             <MapPin size={48} className="text-aqua-400 animate-bounce mb-3" />
-            <h4 className="text-xl font-bold text-gray-900 dark:text-white">Aqua Spa Noida Location Map</h4>
+            <h4 className="text-xl font-bold text-gray-900 dark:text-white">Aqua Spa Gaur City 2 Location Map</h4>
             <p className="font-poppins text-xs text-gray-500 max-w-sm mt-1">
-              Sector 18, Block C, Noida, UP. Click to view on Google Maps.
+              Shop No-27, 1st floor, 14th Ave, Gaur City 2, Greater Noida, Ghaziabad, Uttar Pradesh 201009. Click to view on Google Maps.
             </p>
           </div>
           {/* Real Map iframe link placeholder */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.269094770176!2d77.323565!3d28.569145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a25b340001%3A0xf601e8c741e57c6b!2sSector%2018%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.046317208166!2d77.41724767528353!3d28.628587375667554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee512a32ec69%3A0x6b42b6a9081e779a!2s14th%20Avenue%2C%20Gaur%20City%202!5e0!3m2!1sen!2sin!4v1717950000000!5m2!1sen!2sin"
             className="absolute inset-0 w-full h-full border-0 opacity-80 dark:opacity-60"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Google Map Noida Sector 18"
+            title="Google Map Gaur City 2"
           />
         </motion.div>
 

@@ -20,7 +20,7 @@ export default function Team() {
         <h2 className="section-title">The Healing Hands of Aqua Spa</h2>
         <div className="luxury-divider" />
         <p className="font-poppins text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-          Every specialist at Aqua Spa Noida holds global certifications, bringing together decades of collective experience in therapeutic recovery, deep tissue releases, skin analysis, and holistic chakra balancing.
+          Every specialist at Aqua Spa Gaur City 2 holds global certifications, bringing together decades of collective experience in therapeutic recovery, deep tissue releases, skin analysis, and holistic chakra balancing.
         </p>
 
         {/* Credentials badge list */}

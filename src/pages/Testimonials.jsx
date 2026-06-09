@@ -27,7 +27,7 @@ export default function Testimonials() {
           <h2 className="section-title">Verified Wellness Reviews</h2>
           <div className="luxury-divider" />
           <p className="font-poppins text-sm md:text-base text-gray-600 dark:text-gray-300">
-            Read stories of deep relaxation, healing recoveries, and skincare transformations experienced by our esteemed guests in Noida.
+            Read stories of deep relaxation, healing recoveries, and skincare transformations experienced by our esteemed guests in Gaur City 2 / Greater Noida.
           </p>
         </div>
 
