@@ -1,122 +1,107 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState, useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
-function App() {
-  const [count, setCount] = useState(0)
+// Context Providers
+import { ThemeProvider } from './context/ThemeContext';
+import { WishlistProvider } from './context/WishlistContext';
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+// Components
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SearchModal from './components/SearchModal';
+import BackToTop from './components/BackToTop';
+import WhatsAppFloatButton from './components/WhatsAppFloatButton';
+import Loader from './components/Loader';
 
-      <div className="ticks"></div>
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import ServiceDetails from './pages/ServiceDetails';
+import Gallery from './pages/Gallery';
+import Pricing from './pages/Pricing';
+import Team from './pages/Team';
+import Testimonials from './pages/Testimonials';
+import Blog from './pages/Blog';
+import BlogDetails from './pages/BlogDetails';
+import Contact from './pages/Contact';
+import Appointment from './pages/Appointment';
+import Wishlist from './pages/Wishlist';
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+// Scroll to Top Helper
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
 }
 
-export default App
+export default function App() {
+  const [loading, setLoading] = useState(true);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  useEffect(() => {
+    // Simulate luxury page loading sequence
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1800);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <ThemeProvider>
+        <Loader />
+      </ThemeProvider>
+    );
+  }
+
+  return (
+    <ThemeProvider>
+      <WishlistProvider>
+        <Router>
+          <ScrollToTop />
+          
+          <div className="flex flex-col min-h-screen bg-spa-light dark:bg-black text-spa-dark dark:text-gray-100 transition-colors duration-500">
+            {/* Header / Navigation */}
+            <Navbar onSearchOpen={() => setSearchOpen(true)} />
+
+            {/* Main Content Areas */}
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/services/:slug" element={<ServiceDetails />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/testimonials" element={<Testimonials />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogDetails />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/appointment" element={<Appointment />} />
+                <Route path="/wishlist" element={<Wishlist />} />
+              </Routes>
+            </main>
+
+            {/* Footer */}
+            <Footer />
+
+            {/* Float Utilities */}
+            <BackToTop />
+            <WhatsAppFloatButton />
+
+            {/* Search Modal */}
+            <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+
+            {/* Toast System */}
+            <Toaster position="bottom-right" reverseOrder={false} />
+          </div>
+        </Router>
+      </WishlistProvider>
+    </ThemeProvider>
+  );
+}
