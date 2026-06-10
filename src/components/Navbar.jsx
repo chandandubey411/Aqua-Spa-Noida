@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, Sun, Moon, Heart, Search, ChevronDown } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
+import { Menu, X, Phone, Heart, Search, ChevronDown } from 'lucide-react';
 import { useWishlist } from '../context/WishlistContext';
 import { useScrollPosition } from '../hooks/useScrollPosition';
 
@@ -33,7 +32,6 @@ const navLinks = [
 ];
 
 export default function Navbar({ onSearchOpen }) {
-  const { darkMode, toggleTheme } = useTheme();
   const { wishlist } = useWishlist();
   const { isScrolled } = useScrollPosition();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -79,13 +77,7 @@ export default function Navbar({ onSearchOpen }) {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 rounded-full flex items-center justify-center shadow-luxury overflow-hidden"
-                style={{ background: 'linear-gradient(135deg, #00B4D8, #023E8A)' }}>
-                <span className="text-white font-playfair font-bold text-xl">A</span>
-                <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                  style={{ background: 'linear-gradient(135deg, #FFD166, #FFC233)' }} />
-                <span className="absolute text-white font-playfair font-bold text-xl opacity-0 group-hover:opacity-100 transition-opacity">A</span>
-              </div>
+              <img src="/logo.svg" alt="Aqua Spa Logo" className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300" />
               <div>
                 <div className="font-playfair font-bold text-xl leading-tight" style={{ background: 'linear-gradient(135deg, #00B4D8, #023E8A)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                   Aqua Spa
@@ -153,9 +145,6 @@ export default function Navbar({ onSearchOpen }) {
                   </span>
                 )}
               </Link>
-              <button onClick={toggleTheme} className="p-2.5 rounded-xl text-gray-600 dark:text-gray-300 hover:text-aqua-400 hover:bg-aqua-50 dark:hover:bg-aqua-900/20 transition-all" title="Toggle theme">
-                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
               <Link to="/appointment" className="hidden lg:flex btn-primary py-2.5 px-6 text-xs">
                 Book Now
               </Link>
@@ -179,9 +168,12 @@ export default function Navbar({ onSearchOpen }) {
           >
             <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
             <div className="absolute right-0 top-0 h-full w-80 bg-white dark:bg-gray-900 shadow-2xl overflow-y-auto">
-              <div className="p-6 border-b border-gray-100 dark:border-gray-800">
-                <div className="font-playfair font-bold text-2xl gradient-text">Aqua Spa</div>
-                <div className="text-xs text-gray-400 tracking-widest uppercase">Gaur City 2</div>
+              <div className="p-6 border-b border-gray-100 dark:border-gray-800 flex items-center gap-3">
+                <img src="/logo.svg" alt="Aqua Spa Logo" className="w-10 h-10 object-contain" />
+                <div>
+                  <div className="font-playfair font-bold text-2xl gradient-text">Aqua Spa</div>
+                  <div className="text-xs text-gray-400 tracking-widest uppercase">Gaur City 2</div>
+                </div>
               </div>
               <nav className="p-4">
                 {navLinks.map(link => (

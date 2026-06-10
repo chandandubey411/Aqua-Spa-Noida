@@ -25,20 +25,8 @@ export default function Loader() {
           }}
           className="w-20 h-20 rounded-full bg-gradient-to-tr from-aqua-400 to-aqua-700 flex items-center justify-center shadow-luxury p-0.5"
         >
-          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
-            {/* Elegant SVG Lotus / Icon */}
-            <svg
-              className="w-10 h-10 text-aqua-400 dark:text-aqua-300"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              <path d="M12 2c4 4 6 8 6 12s-2 6-6 8c-4-2-6-4-6-8s2-8 6-12Z" />
-            </svg>
+          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center p-3">
+            <img src="/logo.svg" alt="Aqua Spa Logo" className="w-full h-full object-contain" />
           </div>
         </motion.div>
       </div>

@@ -92,10 +92,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="inline-flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #00B4D8, #023E8A)' }}>
-                <span className="text-white font-playfair font-bold text-xl">A</span>
-              </div>
+            <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
+              <img src="/logo.svg" alt="Aqua Spa Logo" className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300" />
               <div>
                 <div className="font-playfair font-bold text-2xl" style={{ background: 'linear-gradient(135deg, #00B4D8, #48CAE4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Aqua Spa</div>
                 <div className="text-xs text-gray-400 tracking-widest uppercase">Gaur City 2</div>
