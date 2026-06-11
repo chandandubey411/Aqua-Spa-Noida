@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppFloatButton() {
-  const phone = '919876543210';
+  const phone = '919910992067';
   const message = encodeURIComponent('Hello! I would like to book an appointment at Aqua Spa Gaur City 2.');
   const url = `https://wa.me/${phone}?text=${message}`;
 

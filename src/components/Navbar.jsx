@@ -53,7 +53,7 @@ export default function Navbar({ onSearchOpen }) {
       {/* Top bar */}
       <div className="hidden lg:flex bg-aqua-700 text-white text-xs py-2 px-8 justify-between items-center">
         <div className="flex items-center gap-6">
-          <span className="flex items-center gap-1.5"><Phone size={12} /> +91 98765 43210</span>
+          <span className="flex items-center gap-1.5"><Phone size={12} /> +91 99109 92067</span>
           <span>Mon–Sun: 9:00 AM – 9:00 PM</span>
           <span>Shop No-27, 14th Ave, Gaur City 2, Greater Noida</span>
         </div>

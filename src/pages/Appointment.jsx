@@ -315,7 +315,7 @@ export default function Appointment() {
                         required
                         value={guestDetails.phone}
                         onChange={(e) => setGuestDetails(prev => ({ ...prev, phone: e.target.value }))}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 99109 92067"
                         className="w-full px-5 py-3 rounded-xl bg-spa-light dark:bg-gray-800 text-sm focus:outline-none border-2 border-transparent focus:border-aqua-300 text-gray-900 dark:text-white"
                       />
                     </div>

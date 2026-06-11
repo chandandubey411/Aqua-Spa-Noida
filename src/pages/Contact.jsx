@@ -74,8 +74,7 @@ export default function Contact() {
                   <div>
                     <h5 className="font-playfair text-base font-bold text-gray-900 dark:text-white">Phone Support</h5>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 font-poppins">
-                      +91 98765 43210<br />
-                      +91 120 456 7890
+                      <a href="tel:+919910992067" className="hover:text-aqua-400 transition-colors">+91 99109 92067</a>
                     </p>
                   </div>
                 </div>

@@ -108,9 +108,9 @@ export default function Footer() {
                 <MapPin size={16} className="text-aqua-400 flex-shrink-0 mt-0.5" />
                 <span>Shop No-27, 1st floor, 14th Ave, Gaur City 2, Greater Noida, Ghaziabad, Uttar Pradesh 201009</span>
               </div>
-              <a href="tel:+919876543210" className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
+              <a href="tel:+919910992067" className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
                 <Phone size={16} className="text-aqua-400 flex-shrink-0" />
-                <span>+91 98765 43210 / +91 120 456 7890</span>
+                <span>+91 99109 92067</span>
               </a>
               <a href="mailto:hello@aquaspa.com" className="flex items-center gap-3 text-gray-400 hover:text-aqua-400 transition-colors">
                 <Mail size={16} className="text-aqua-400 flex-shrink-0" />
